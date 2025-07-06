@@ -1,10 +1,12 @@
+package Graph;
+
 public class Edge {
 
-    private int source;
-    private int destination;
+    private String source;
+    private String destination;
     private int weight;
 
-    public Edge(int source, int destination, int weight){
+    public Edge(String source, String destination, int weight){
 
         this.source = source;
         this.destination = destination;
@@ -12,11 +14,11 @@ public class Edge {
 
     }
 
-    public int getSource() {
+    public String getSource() {
         return source;
     }
 
-    public int getDestination() {
+    public String getDestination() {
         return destination;
     }
 
@@ -24,11 +26,11 @@ public class Edge {
         return weight;
     }
 
-    public void setSource(int source) {
+    public void setSource(String source) {
         this.source = source;
     }
 
-    public void setDestination(int destination) {
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 
@@ -38,7 +40,7 @@ public class Edge {
 
     public String toString(){
 
-        return "Edge{" +
+        return "Graph.Graph.Edge{" +
                 "source=" + source +
                 ", destination=" + destination +
                 ", weight=" + weight +
