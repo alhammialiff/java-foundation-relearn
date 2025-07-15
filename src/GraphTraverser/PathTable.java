@@ -13,7 +13,9 @@ public class PathTable {
     }
 
     public void addNodePath(NodePath nodePath) {
+
         pathTable.add(nodePath);
+
     }
 
     public NodePath getNodePath(String node){

@@ -14,12 +14,11 @@ public class Main {
         myFirstGraph.addEdge("A","D", 2);
         myFirstGraph.addEdge("C","B", 1);
         myFirstGraph.addEdge("C","D", 5);
-        myFirstGraph.addEdge("D","C", 2);
         myFirstGraph.addEdge("D","E", 3);
         myFirstGraph.addEdge("D","B", 4);
 
         Dijkstra dijkstra = new Dijkstra(myFirstGraph);
-//        dijkstra.traverse('A', 'D');
+        dijkstra.traverse("A", "E");
 
     }
 
